@@ -1,0 +1,36 @@
+.statistics {
+  border: 0.1px solid #787878;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c8c8cd;
+}
+
+.stat_list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+.item {
+  width: 25%;
+  padding: 10px;
+  font-size: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  background-color: #fff;
+  margin: 0;
+  padding: 10px;
+}
