@@ -23,3 +23,6 @@ export const Statistics = ({ title, stats }) => {
     </section>
   );
 };
+Statistics.defaultProps = {
+  title: '',
+};
