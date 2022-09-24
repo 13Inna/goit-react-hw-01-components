@@ -1,4 +1,6 @@
 import css from './Statistics.module.css';
+import PropTypes from 'prop-types';
+
 function setBg() {
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
   return `#${randomColor}`;
@@ -23,6 +25,14 @@ export const Statistics = ({ title, stats }) => {
     </section>
   );
 };
-Statistics.defaultProps = {
-  title: '',
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
+export default Statistics;
